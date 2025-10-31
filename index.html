@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon Solar - Illuminating the Future of Energy</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <nav class="container">
+        <div class="logo">
+          <img src="logo.png" alt="icon" />
+          Moon Solar
+          <p>Lighting up path to a sustainable Future</p>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home" onclick="showSection('home')">Home</a></li>
+          <li>
+            <a href="#customer-types" onclick="showSection('customer-types')"
+              >Solutions</a
+            >
+          </li>
+          <li>
+            <a href="#calculator" onclick="showSection('calculator')"
+              >Calculator</a
+            >
+          </li>
+          <li><a href="#about" onclick="showSection('about')">About</a></li>
+          <li>
+            <a href="#contact" onclick="showSection('contact')">Contact</a>
+          </li>
+        </ul>
+        <button class="mobile-menu" onclick="toggleMobileNav()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-Nav">
+        <button class="mobile-nav-close" onclick="toggleMobileNav()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" onclick="showSection('home'); toggleMobileNav()">Home</a></li>
+            <li><a href="#customer-types" onclick="showSection('customer-types'); toggleMobileNav()">Solutions</a></li>
+            <li><a href="#calculator" onclick="showSection('calculator'); toggleMobileNav()">Calculator</a></li>
+            <li><a href="#about" onclick="showSection('about'); toggleMobileNav()">About</a></li>
+            <li><a href="#contact" onclick="showSection('contact'); toggleMobileNav()">Contact</a></li>
+        </ul>
+    </div>
+
+    
+
+    <!-- Home Section -->
+    <section id="home" class="page-section active">
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-content animate-on-scroll">
+          <h1> Welcome to <span>Moon</span> Solar </h1>
+          <p>
+            Illuminating the Future of Energy with Sustainable Solar Solutions 
+          </p>
+          <div class="cta-buttons">
+            <a
+              href="#customer-types"
+              class="btn btn-primary"
+              onclick="showSection('customer-types')"
+              >Get Started</a
+            >
+            <a
+              href="#about"
+              class="btn btn-secondary"
+              onclick="showSection('about')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="features">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">
+            Why Choose Moon Solar?
+          </h2>
+          <div class="features-grid">
+            <div class="feature-item animate-on-scroll">
+              <i class="fas fa-leaf feature-icon"></i>
+              <h4>Sustainable Energy</h4>
+              <p>Harness the power of the sun for a cleaner, greener future</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+              <i class="fas fa-dollar-sign feature-icon"></i>
+              <h4>Cost Savings</h4>
+              <p>Reduce your energy bills with efficient solar solutions</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+              <i class="fas fa-tools feature-icon"></i>
+              <h4>Expert Installation</h4>
+              <p>Professional installation by certified solar experts</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+              <i class="fas fa-headset feature-icon"></i>
+              <h4>24/7 Support</h4>
+              <p>Ongoing maintenance and support for your solar system</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Types Section -->
+    <section id="customer-types" class="page-section">
+      <div class="customer-types">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">
+            Explore Solar Solutions for Every Need
+          </h2>
+          <p
+            style="
+              text-align: center;
+              font-size: 1.1rem;
+              color: #666;
+              margin-bottom: 2rem;
+            "
+          >
+            Moon Solar caters to diverse energy needs, serving homeowners,
+            businesses, and industries with cutting-edge solar solutions.
+          </p>
+          <div class="customer-grid">
+            <div
+              class="customer-card residential animate-on-scroll"
+              onclick="showCustomerDetails('residential')"
+            >
+              <i class="fas fa-home customer-icon"></i>
+              <h3>Residential Solar</h3>
+              <p>
+                Transform your home with sustainable solar energy solutions
+                tailored for residential properties.
+              </p>
+              <a href="Residential/residential.html" class="btn btn-primary">Learn More</a>
+            </div>
+            <div
+              class="customer-card commercial animate-on-scroll"
+              onclick="showCustomerDetails('commercial')"
+            >
+              <i class="fas fa-building customer-icon"></i>
+              <h3>Commercial Solar</h3>
+              <p>
+                Empower your business with cost-effective solar solutions that
+                reduce operational costs.
+              </p>
+              <div class="btn btn-primary">Learn More</div>
+            </div>
+            <div
+              class="customer-card industrial animate-on-scroll"
+              onclick="showCustomerDetails('industrial')"
+            >
+              <i class="fas fa-industry customer-icon"></i>
+              <h3>Industrial Solar</h3>
+              <p>
+                Scalable solar solutions designed for large-scale industrial
+                operations and complex installations.
+              </p>
+              <div class="btn btn-primary">Learn More</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="page-section">
+      <div class="calculator">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll" style="color: white">
+            Discover Your Solar Potential
+          </h2>
+          <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem">
+            Get personalized estimates for your solar installation based on your
+            location and energy needs.
+          </p>
+          <div class="calculator-form animate-on-scroll">
+            <form id="solarCalculatorForm" onsubmit="calculateSolar(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="customerType">Customer Type:</label>
+                  <select id="customerType" name="customerType" required>
+                    <option value="">Select Type</option>
+                    <option value="residential">Residential</option>
+                    <!-- <option value="commercial">Commercial</option>
+                    <option value="industrial">Industrial</option> -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="location">Location (City, State):</label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="e.g., Lucknow, UP"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="energyConsumption"
+                    >Monthly Energy Consumption (kWh):</label
+                  >
+                  <input
+                    type="number"
+                    id="energyConsumption"
+                    name="energyConsumption"
+                    placeholder="e.g., 500"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="roofArea">Available Roof Area (sq ft):</label>
+                  <input
+                    type="number"
+                    id="roofArea"
+                    name="roofArea"
+                    placeholder="e.g., 1000"
+                    required
+                  />
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; margin-top: 1rem"
+              >
+                Calculate Solar Potential
+              </button>
+            </form>
+
+            <div id="calculatorResults" class="results">
+              <h3>Your Solar Potential Results</h3>
+              <div class="results-grid">
+                <div class="result-item">
+                  <div class="result-value" id="monthlySavings">₹0</div>
+                  <div>Monthly Savings</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-value" id="yearlySavings">₹0</div>
+                  <div>Yearly Savings</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-value" id="co2Reduction">0</div>
+                  <div>CO2 Reduced (tons/year)</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-value" id="roiPeriod">0</div>
+                  <div>ROI Period (years)</div>
+                </div>
+              </div>
+              <div style="text-align: center; margin-top: 2rem">
+                <button
+                  class="btn btn-primary"
+                  onclick="showSection('contact')"
+                >
+                  Get Detailed Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-section">
+      <div class="about">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">About Moon Solar</h2>
+          <div class="about-content">
+            <div class="animate-on-scroll">
+              <!-- changed color -->
+              <h3 style="color: #527806; margin-bottom: 1rem">Our Mission</h3>
+              <div class="about-text">
+                At Moon Solar, we are committed to harnessing the power of the
+                sun to create sustainable and cost-effective energy solutions.
+                With a passion for innovation and a dedication to environmental
+                stewardship, we offer tailored solar installations for a
+                brighter and cleaner tomorrow.
+                <br /><br />
+                Our team of certified professionals brings years of experience
+                in solar technology, ensuring that every installation meets the
+                highest standards of quality and efficiency. We believe in
+                empowering our customers with clean energy solutions that not
+                only reduce their carbon footprint but also provide significant
+                long-term savings.
+              </div>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <div class="stat-number">500+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">50MW</div>
+                  <div class="stat-label">Total Capacity Installed</div>
+                </div>
+              </div>
+            </div>
+            <div class="animate-on-scroll">
+              <h3 style="color: #527806; margin-bottom: 1rem">
+                Why Choose Us?
+              </h3>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i class="fas fa-certificate feature-icon"></i>
+                  <h4>Certified Professionals</h4>
+                  <p>
+                    Our team consists of certified solar installation experts
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-award feature-icon"></i>
+                  <h4>Quality Assurance</h4>
+                  <p>We use only premium quality solar panels and equipment</p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-handshake feature-icon"></i>
+                  <h4>Customer First</h4>
+                  <p>Dedicated support throughout your solar journey</p>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-clock feature-icon"></i>
+                  <h4>Quick Installation</h4>
+                  <p>Efficient installation process with minimal disruption</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section">
+      <div class="contact">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Let's Talk Solar</h2>
+          <p
+            style="
+              text-align: center;
+              font-size: 1.1rem;
+              color: #666;
+              margin-bottom: 2rem;
+            "
+          >
+            Have questions or ready to take the next step toward a solar-powered
+            future? Reach out to the Moon Solar team today.
+          </p>
+          <div class="contact-content">
+            <div class="contact-info animate-on-scroll">
+              <!-- changed text color -->
+              <h3 style="color: #527806; margin-bottom: 2rem">Get in Touch</h3>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Address:</strong><br />
+                  542KB/093, Asiamau, Haidarganj<br />
+                  Lucknow, Uttar Pradesh - 226003
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>Phone:</strong><br />
+                  +91 89236 78741
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email:</strong><br />
+                  infomoonsolar@gmail.com
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>Business Hours:</strong><br />
+                  Mon - Sat: 9:00 AM - 6:00 PM<br />
+                  Sun: 10:00 AM - 4:00 PM
+                </div>
+              </div>
+            </div>
+            <div class="contact-form animate-on-scroll">
+              <form id="contactForm" onsubmit="submitContactForm(event)">
+                <div class="form-group">
+                  <label for="fullName">Full Name:</label>
+                  <input type="text" id="fullName" name="fullName" required />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="serviceType">Service Interest:</label>
+                  <select id="serviceType" name="serviceType" required>
+                    <option value="">Select Service</option>
+                    <option value="residential">Residential Solar</option>
+                    <option value="commercial">Commercial Solar</option>
+                    <option value="industrial">Industrial Solar</option>
+                    <option value="consultation">Free Consultation</option>
+                    <option value="maintenance">Maintenance Service</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Tell us about your solar energy needs..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="width: 100%"
+                >
+                  Send Message
+                </button>
+                <div id="contactSuccess" class="success-message">
+                  <i class="fas fa-check-circle"></i>
+                  Thank you for your inquiry! We'll get back to you within 24
+                  hours.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Moon Solar</h4>
+            <p style="color: #ccc; margin-bottom: 1rem">
+              Illuminating the future with sustainable solar energy solutions
+              for homes, businesses, and industries.
+            </p>
+            <div style="font-size: 1.5rem">
+              <a href="#" style="margin-right: 1rem"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" style="margin-right: 1rem"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" style="margin-right: 1rem"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/solarelectrical?igsh=MXZ0Y2QybzJ3M29kZQ=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul style="list-style: none">
+              <li>
+                <a href="Residential/residential.html" onclick="showSection('customer-types')"
+                  >Residential Solar</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="showSection('customer-types')"
+                  >Commercial Solar</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="showSection('customer-types')"
+                  >Industrial Solar</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="showSection('calculator')"
+                  >Solar Calculator</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="showSection('contact')"
+                  >Free Consultation</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul style="list-style: none">
+              <li><a href="#home" onclick="showSection('home')">Home</a></li>
+              <li>
+                <a href="#about" onclick="showSection('about')">About Us</a>
+              </li>
+              <li>
+                <a href="#contact" onclick="showSection('contact')">Contact</a>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div style="color: #ccc">
+              <!-- changed color #ffd700 -->
+              <p>
+                <i
+                  class="fas fa-map-marker-alt"
+                  style="margin-right: 0.5rem; color: hsl(66, 89%, 42%)"
+                ></i>
+                Lucknow, Uttar Pradesh - 226003
+              </p>
+              <p>
+                <i
+                  class="fas fa-phone"
+                  style="margin-right: 0.5rem; color: hsl(66, 89%, 42%)"
+                ></i>
+                +91 89236 78741
+              </p>
+              <p>
+                <i
+                  class="fas fa-envelope"
+                  style="margin-right: 0.5rem; color: hsl(66, 89%, 42%)"
+                ></i>
+                info@moonsolar.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Moon Solar. All rights reserved. | Designed with ❤️ for
+            a sustainable future
+          </p>
+        </div>
+      </div>
+    </footer>
+   
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+      <button class="chat-button" onclick="openChat()">
+        <i class="fa-brands fa-whatsapp"></i>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
